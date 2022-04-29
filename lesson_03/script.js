@@ -6,8 +6,8 @@
   const productCategory = 'Мебель';
   const productPrice = 14000;
 
-  console.log(productName);
-  console.log('Общая сумма товара: ' + productAmount * productPrice + '₽');
+  // console.log(productName);
+  // console.log('Общая сумма товара: ' + productAmount * productPrice + '₽');
 }
 
 {
@@ -18,10 +18,17 @@
 }
 
 {
-  const productNameFromUser = prompt('Введите наименование товара');
-  const productAmountFromUser = prompt('Введите количество товара');
-  const productCategoryFromUser = prompt('Введите категорию товара');
-  const productPriceFromUser = prompt('Введите стоимость товара');
+  const productNameFromUser = prompt('Введите наименование товара') + '';
+  console.log(typeof productNameFromUser);
+
+  const productAmountFromUser = +prompt('Введите количество товара');
+  console.log(typeof productAmountFromUser);
+
+  const productCategoryFromUser = prompt('Введите категорию товара') + '';
+  console.log(typeof productCategoryFromUser);
+
+  const productPriceFromUser = +prompt('Введите стоимость товара');
+  console.log(typeof productPriceFromUser);
 
   console.log(
     `На складе ${productAmountFromUser} единиц товара "${productNameFromUser}" категории "${productCategoryFromUser}" на сумму ${
