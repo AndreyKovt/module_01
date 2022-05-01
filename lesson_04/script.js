@@ -16,7 +16,7 @@
   const productCategory = 'Бытовая техника';
   const productPrice = 8000;
 }
-
+*/
 {
   const productNameFromUser = prompt('Введите наименование товара');
   const productAmountFromUser = prompt('Введите количество товара');
@@ -36,4 +36,3 @@
     console.log('Вы ввели некорректные данные');
   }
 }
-*/
